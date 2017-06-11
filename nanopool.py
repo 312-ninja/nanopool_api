@@ -2,7 +2,14 @@
 
 from api import NanoPool
 
-address = input('Account Address: ')
+import configparser
+
+
+config = configparser.ConfigParser()
+
+config.read('config')
+
+address = config['ACCOUNT']['address']
 
 nanopool = NanoPool(address)
 
