@@ -13,4 +13,6 @@ address = config['ACCOUNT']['address']
 
 nanopool = NanoPool(address)
 
+print(nanopool.info)
+
 print(nanopool.get_balance())
